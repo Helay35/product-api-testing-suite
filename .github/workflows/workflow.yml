@@ -24,8 +24,9 @@ jobs:
           pip install pylint nose
 
       - name: Lint with pylint
-        run: |
-          pylint app.py --disable=C0114
+  run: |
+    pylint app.py --disable=C0114
+
 
       - name: Run unit tests with nose
         run: |
